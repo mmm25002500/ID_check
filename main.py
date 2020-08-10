@@ -65,7 +65,7 @@ def check_id_card(id_card):
 		print(errors[1])
 	# 15位身份號碼檢測
 	if len(id_card) == 10:
-		if (get_place_num(id_card[0]) + int(id_card[1]) + int(id_card[2]) + int(id_card[3]) + int(id_card[4]) + int(id_card[5]) + int(id_card[6]) + int(id_card[7])+ int(id_card[8])+ int(id_card[9]) ) %10 ==0:
+		if (int(str(get_place_num(id_card[0]))[0]) + int(str(get_place_num(id_card[0]))[1])*9 + int(id_card[1])*8 + int(id_card[2])*7 + int(id_card[3])*6 + int(id_card[4])*5 + int(id_card[5])*4 + int(id_card[6])*3 + int(id_card[7])*2+ int(id_card[8])+ int(id_card[9])) %10 ==0:
 			print('正確的身份證字號')
 		else:
 			print(errors[0])
