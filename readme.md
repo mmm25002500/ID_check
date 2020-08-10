@@ -25,6 +25,14 @@ Linux(Ubuntu):
 ``cd ID_check``
 
 ``python main.py``
+
+Linux(Arch):
+
+``pacman -Syu``
+``pacman -S python``
+``cd ID_check``
+``python main.py``
+
 ## 關於我們 About Us
 
 [Team Website](www.tershi.ml)
